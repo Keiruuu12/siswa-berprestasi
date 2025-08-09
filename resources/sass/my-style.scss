@@ -1,0 +1,90 @@
+.w-auto td,
+.w-auto th {
+    white-space: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.w-auto td:last-child{
+    padding-right: 25px;
+}
+
+tr:target{
+    background-color: lightyellow !important;
+}
+
+#main-navbar .nav-link{
+    color: #212529;
+    text-transform: uppercase;
+}
+
+#main-navbar .nav-link:hover {
+    color: #9e7b1c;
+}
+
+#main-navbar .container{
+    border-bottom: 2px solid black;
+}
+
+@media(max-width: 700px){
+    .btn-action {
+        opacity: 0.7;
+    }
+}
+@media(hover:none){
+    .btn-action{
+        opacity: 0.7;
+    }
+}
+
+.btn-info, .btn-primary, .btn-secondary, .btn-info:focus, .btn-primary:focus, .btn-secondary:focus {
+    background-color: #1f3f7a;
+    border-color: #1f3f7a;
+    color: white;
+}
+
+.btn-info:focus, .btn-primary:focus, .btn-secondary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(31, 63, 122, 0.5) !important;
+}
+
+.btn-info:active, .btn-primary:active, .btn-info:active {
+    background-color: #0a2351 !important;
+}
+.btn-success{
+    background-color: #b99737;
+    border-color: #b99737;
+}
+.btn-success:hover{
+    background-color: #937b1c;
+    border: #937b1c;
+}
+.btn-success:focus{
+    box-shadow: 0 0 0 0.2rem rgba(185, 151, 55, 0.5) !important;
+}
+.btn-success:active{
+    background-color: #b99737 !important;
+}
+
+::selection{
+    background: #0a2351;
+    color: white;
+}
+
+table td a, small a{
+    text-decoration: none;
+}
+
+.table td, .table th{
+    padding: 0.75;
+    vertical-align: middle;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    vertical-align: baseline;
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
