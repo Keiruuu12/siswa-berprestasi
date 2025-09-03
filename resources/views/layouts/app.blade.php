@@ -33,10 +33,10 @@
                             <a class="nav-link px-4" href="{{ route('bobot-siswa.index') }}">Bobot Siswa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-4" href="{{ route('peringkat-ahp.index') }}">Peringkat AHP</a>
+                            <a class="nav-link px-4" href="{{ route('peringkat-saw.index') }}">Peringkat SAW</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-4" href="{{ route('peringkat-saw.index') }}">Peringkat SAW</a>
+                            <a class="nav-link px-4" href="{{ route('peringkat-ahp.index') }}">Peringkat AHP</a>
                         </li>
                         @if (Auth::user()->role_id === 2)
                         <li class="nav-item">

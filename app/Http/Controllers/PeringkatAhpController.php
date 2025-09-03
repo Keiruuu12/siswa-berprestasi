@@ -168,8 +168,8 @@ class PeringkatAhpController extends Controller
         $CI = ($totalEigenValue - count($matrix)) / (count($matrix) - 1);
         $RI = 0.90;
         $CR = $CI / $RI;
+        
         $kriTemp = $CR;
-
         return [$kriTemp, $CR, $pri1, $pri2, $pri3, $pri4];
     }
 

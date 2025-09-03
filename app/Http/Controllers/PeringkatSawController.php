@@ -44,8 +44,6 @@ class PeringkatSawController extends Controller
         }else{
         PeringkatSaw::deleteAll();
 
-        
-
         $olimpiade = 4;
         $nilaiRata = 3;
         $kehadiran = 2;
@@ -120,10 +118,6 @@ class PeringkatSawController extends Controller
             
 
             $siswas[] = $kriteriaSiswa->siswa_id;
-            // $nilaiRatas[] = $kriteriaSiswa->nilai_rata;
-            // $olimpiades[] = $kriteriaSiswa->olimpiade;
-            // $sikaps[] = $this->sikapAngka($kriteriaSiswa->sikap);
-            // $kehadirans[] = $kriteriaSiswa->kehadiran;
 
         }
 
@@ -146,20 +140,6 @@ class PeringkatSawController extends Controller
             $nKehadirans[] = $kehadirans[$i] / $maxKehadiran;
             $nNilaiRatas[] = $nilaiRatas[$i] / $maxNilaiRata;
         }
-
-
-
-        // foreach($kriteriaSiswas as $kriteriaSiswa)
-        // {
-
-        //     $nSiswas[] = $kriteriaSiswa->siswa_id;
-        //     $nOlimpiades[] = $kriteriaSiswa->olimpiade / $maxOlimpiade;
-        //     $nNilaiRatas[] = $kriteriaSiswa->nilai_rata / $maxNilaiRata;
-        //     $nSikaps[] = $this->sikapAngka($kriteriaSiswa->sikap) / $maxSikap;
-        //     $nKehadirans[] = $kriteriaSiswa->kehadiran / $maxKehadiran;
-            
-        // }
-
         
         // hasil untuk di peringkatkan
         $hSiswas     = [];
